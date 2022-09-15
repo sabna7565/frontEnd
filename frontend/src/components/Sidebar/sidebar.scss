@@ -1,0 +1,83 @@
+.sidebar {
+	flex: 2;
+	border: 0.5px solid rgb(230, 227, 227);
+	min-height: 100vh;
+	.top {
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.logo {
+		font-size: 20px;
+		font-weight: bold;
+		color: #6439ff;
+	}
+	hr {
+		height: 0;
+		border: 0.5px solid rgb(230, 227, 227);
+	}
+	.center {
+		padding-left: 10px;
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			.title {
+				font-size: 13px;
+				font-weight: bold;
+				color: #999;
+				margin-top: 15px;
+				margin-bottom: 10px;
+			}
+			li {
+				display: flex;
+				align-items: center;
+				padding: 5px;
+				cursor: pointer;
+				margin-bottom: 13px;
+				&:hover {
+					background-color: #ece8ff;
+					padding-left: 8px;
+				}
+				.icon {
+					font-size: 30px;
+					color: white;
+					background: #704bf3;
+					border-radius: 4px;
+				}
+				span {
+					font-size: 15px;
+					font-weight: 700;
+					color: #704bf3;
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+	.bottom {
+		background: #704bf3;
+		border-radius: 10px 10px 0px 0px;
+		padding: 12px;
+		margin-top: 25px;
+		height: 78px;
+		padding-left: 0px;
+		margin-left: 0px;
+		.classul {
+			align-items: center;
+			justify-content: center;
+			margin-top: 5px;
+			li {
+				list-style: none;
+				color: white;
+				font-size: 14px;
+				height: 28px;
+				.doticon {
+					font-size: 14px;
+					font-weight: bold;
+					width: 20px;
+				}
+			}
+		}
+	}
+}
