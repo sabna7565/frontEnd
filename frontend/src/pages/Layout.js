@@ -25,8 +25,7 @@ import Menu from '@mui/material/Menu';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
 import TranslateOutlinedIcon from '@mui/icons-material/TranslateOutlined';
-import CardButtons from '../components/Navbar/CardButtons';
-import { Grid } from '@mui/material';
+
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -315,10 +314,10 @@ function ResponsiveDrawer({children},props) {
 				component="main"
 				sx={{
 					flexGrow: 1,
-					p: 6,
-					width: { sm: `calc(100% - ${drawerWidth}px)` },
 					background:"#EFECFF",
-					height:"100vh"
+					minHeight:"100vh",
+					maxHeight:'auto',
+					marginTop:'30px'
 				}}
 			>
 				<Toolbar />
